@@ -1,10 +1,10 @@
 'use strict'
 
 const fs = require('fs')
-const {promisify} = require('util')
+const { promisify } = require('util')
 
-const ManifestManager = require('pact-manifest').ManifestManager
-const ManifestPublisher = require('pact-manifest').ManifestPublisher
+const ManifestManager = require('@nielsen-oss/pact-manifest').ManifestManager
+const ManifestPublisher = require('@nielsen-oss/pact-manifest').ManifestPublisher
 const readFileAsync = promisify(fs.readFile)
 
 module.exports = class ManifestClient {
